@@ -1,21 +1,22 @@
+h1 {
 
-.container {
-
-	background-color: dodgerblue;
+	color: rebeccapurple;
 }
 
 .row {
 
-	background-color: cornsilk;
+	margin-top: 2%;
+	
 }
 
-[class^="col-"]:first-child {
+[class^="col-"] {
 
 		background-color: aquamarine;
+		margin-top: 2%;
 }
 
-[class^="col-"]:last-child {
+.card {
 
-	background-color: salmon;
-	
+	margin-left: 3%;
+	margin-top: 1%;
 }
