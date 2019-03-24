@@ -15,6 +15,7 @@
 
     	<button id="button1_1" class="color-button" >Color Me!</button>
     	<button id="button1_2" class="hide-button"> Hide Me!</button>
+        <button id="button1_3" class="size-button">Click for Surprise!</button>
 
     	</div>
 
@@ -26,7 +27,7 @@
     	<button id="button2_2" class="hide-button"> Hide Me!</button>
 
 
-    	</div>
+    	</div> 
 
 
     	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -44,7 +45,7 @@
     					var blueVal = Math.random()*255;
 
 
-    				$(this).siblings("p").css("background-color","rgb(" + redVal + "," + greenVal + "," + blueVal + ")")
+    				$(this).siblings("p").css("color","rgb(" + redVal + "," + greenVal + "," + blueVal + ")")
 
     			});
 
@@ -67,6 +68,7 @@
 
 
 									});
+     
 
     		});
     		
