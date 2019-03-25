@@ -1,0 +1,51 @@
+.bg-dark {
+
+    background-color: #B0E0E6!important;
+    
+}
+
+
+.jumbotron {
+    padding: 8rem 1rem;
+    margin-top: 4rem;
+	background-image: url("img/jumbo_butterfly_pic.png");
+  	background-size: cover;
+}
+
+.display-3 {
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color: green;
+}
+
+p {
+
+	color: green;
+	width: 75%;
+	font-size: 1.5rem;
+}
+
+
+body {
+
+  font-family: 'Karla', sans-serif !important;
+}
+
+.navbar-brand {
+
+    font-size: 1.75rem;
+    margin-right: -27rem;
+   
+}
+
+a {
+
+	font-size: 1.25rem;
+}
+
+img {
+
+	width: 10%;
+	margin-right: 2%;
+}
