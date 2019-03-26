@@ -11,6 +11,8 @@ $(document).ready(function(){
   $('.modal').modal('show');
 });
 
+	
+
 	$(".carousel-pauser").click(function() {
 
 
