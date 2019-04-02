@@ -47,6 +47,12 @@ body {
     background-color:   #e49a59;
 }
 
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
 hr {
     border: 0;
     border-top: 1px solid #ccc;
