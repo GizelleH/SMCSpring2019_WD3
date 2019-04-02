@@ -1,0 +1,333 @@
+body {
+
+    background-color: antiquewhite;
+}
+
+
+.bg-dark {
+
+    background-color: #e49a59!important;
+    
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+
+    color: #F4BC8B;
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url(https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png);
+
+
+}
+
+.nav-item {
+
+
+    padding-left: 10px;
+}
+
+
+.btn-outline-light {
+    
+    margin-left: 0rem; 
+
+}
+
+.modal-header .close {
+    padding: 1rem 1rem;
+    margin: 0;
+}
+
+
+
+.modal-content {
+
+
+    background-color:   #e49a59;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    clear: both;
+    display: block;
+    margin: 20px auto 40px auto;
+
+}
+
+
+
+
+
+
+.jumbotron {
+    padding: 8rem 1rem;
+    margin-top: 4rem;
+	background-image: url("img/alex-guillaume-434982-unsplash.jpg");
+  	background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+
+
+}
+.jumbotron-2 {
+
+    padding: 8rem 1rem;
+    margin-top: 4rem;
+    background-image: url("img/yogesh-pedamkar-1315012-unsplash.jpg");
+    background-position: 65% 35%;
+}
+
+.jumbotron-3 {
+
+    padding: 8rem 1rem;
+    margin-top: 4rem;
+    background-image: url("img/jumbo_butterfly_pic.jpg");
+    background-position: 25% 75%;
+}
+
+.jumbotron-4 {
+
+    padding: 8rem 1rem;
+    margin-top: 4rem;
+    background-image: url("img/perry-grone-732606-unsplash.jpg");
+    background-size: cover;
+   background-position: center;
+}
+
+
+
+
+
+
+.img-fluid
+
+{
+    max-width: 100%;
+    height: auto;
+}
+
+.display-3 {
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1.2;
+    color: white; 
+    text-shadow: 0px 0px 3px black;   
+}
+
+
+p {
+
+    line-height: 1.80rem
+}
+
+h1 {
+
+    padding: 10px;
+
+}
+
+h2 {
+
+	color: black;
+	width: 90%;
+	background-color: #cc9e76c2;
+    border-radius: 9px;
+    padding: 10px;
+
+
+
+}
+
+h3 {
+
+    font-size: 1.25rem;
+    line-height: 1.80rem;
+    padding: 10px;
+
+}
+
+h6 {
+
+    font-size: .75rem;
+
+}
+
+h5 {
+
+    font-size: 2rem;
+}
+
+
+
+
+body {
+
+  font-family: 'Poppins', sans-serif !important;
+}
+
+[class^="col-"] {
+   
+    margin-bottom: 2%;
+
+}
+
+.navbar-brand {
+
+    font-size: 2.25rem;
+    margin-right: 5rem;
+}
+
+a {
+
+	font-size: 1rem;
+}
+
+.navbar-dark .navbar-brand {
+    color: white;
+}
+
+.navbar-dark .navbar-toggler {
+    
+    border-color: #F4BC8B;
+}
+
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #F4BC8B;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: black;
+}
+
+
+img {
+
+
+	margin-right: 5%;
+}
+.butterfly-img {
+
+    width: 70%;
+}
+
+.container {
+    margin-top: 5%;
+}
+
+.card-header {
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #e49a59;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+}
+
+.card-body {
+
+
+    background-color: #F4BC8B;
+}
+
+
+.col-lg-12 {
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.mr-3{
+
+width: 20%;
+
+}
+
+
+#modal-btn {
+   
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+
+    h6 {
+
+            font-size: 1.25rem;
+         
+    }
+
+
+
+.jumbotron-2 {
+
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px;
+}
+
+
+.jumbotron-3 {
+
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.jumbotron-4 {
+
+   
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.btn-outline-light {
+    
+    justify-content: flex-end; 
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
