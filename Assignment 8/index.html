@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        .invalid-feedback, .valid-feedback {
+            display: block;
+        }
+    </style>
+    <title>Auto Select</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h1>Select a cat breed!</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+
+                <form action="form-process.php" method="POST">
+                    <div class="form-group">
+                    <label for="catBreed">Select cat breed:</label>
+                    <select class="form-control" id="catBreed" name="carmake">
+                        <option value="coon">Maine Coon</option>
+                        <option value="fold">Scottish Fold</option>
+                        <option value="sphynx">Sphynx</option>
+                        
+                    </select>
+                    </div>
+
+                    <div class="form-group">
+                    <label for="catSex">Male or female?</label>
+                    <select class="form-control" id="catSex" name="catsex" disabled>
+                        <option value="catMale"> Male </option>
+                        <option value="catFemale"> Female </option>
+                    </select>
+                    </div>
+
+
+                
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            var coonSex = ["Male", "Female"];
+            var foldSex = ["Male", "Female"];
+            var sphynxSex = ["Male", "Female"];
+            
+            $("#catBreed").change(function(){
+                var currentSelect = $(this).val();
+                var innerContent = "";
+                $('#catSex').removeAttr('disabled');
+                switch(currentSelect){
+                    case "coon":
+                        for(var i = 0; i < coonSex.length; i++){
+                            innerContent += '<option value="' + coonSex[i].toLowerCase() + '">' + coonSex[i] + "</option>";
+                        }
+                        break;
+                    case "fold":
+                        for(var i = 0; i < foldSex.length; i++){
+                            innerContent += '<option value="' + foldSex[i].toLowerCase() + '">' + foldSex[i] + "</option>";
+                        }
+                        break;
+                    case "sphynx":
+                        for(var i = 0; i < sphynxSex.length; i++){
+                            innerContent += '<option value="' + sphynxSex[i].toLowerCase() + '">' + sphynxSex[i] + "</option>";
+                        }
+                        break;
+                    default:
+                        break;
+                }//end of switch
+                console.log(innerContent);
+                $('#catSex').html(innerContent);  
+            }); // end of carMake change event
+            $("#catSex").change(function(){
+                var catSex = $("#catSex").val();
+                
+                if(catSex.value=='catMale'){
+                    $("#catSex").after('<div class="alert alert-primary" role="alert">Personalities and behavior vary between male and female cats.</div>');
+                }
+                else {
+                    $("#catSex").after('<div class="alert alert-primary" role="alert"> Personalities and behavior vary between male and female cats.</div>');
+                }
+            });
+        });// end of document ready
+    </script>
+</body>
+
+</html>
