@@ -44,7 +44,7 @@ body {
 	}
 
 
-	25% {
+	17% {
 
 
 		background-color: white;
@@ -53,7 +53,7 @@ body {
 
 	}
 
-	50% {
+	34% {
 
 
 		background-color: lightblue;
@@ -64,7 +64,7 @@ body {
 		
 	}
 
-	100% {
+	50% {
 
 		background-color: lightpink;
 		top: 400px;
@@ -74,6 +74,35 @@ body {
 		width: 200px;
 	}
 
+	67% {
+
+
+		background-color: lightblue;
+		top: 100px;
+		left: 500px;
+		height: 150px;
+		width: 150px;
+		
+	}
+
+	84% {
+
+
+		background-color: white;
+		top: 400px;
+		left: 520px;
+
+	}
+
+	100% {
+
+			background-color: white;
+			top: 5px;
+			left: 10px;
+
+
+
+	}
 
 
 }
