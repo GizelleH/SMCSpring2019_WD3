@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8"/>
+
+
+  <style>
+        body {
+            background-color: white;
+            margin: 0px;
+        }
+        #canvas{
+            width: 1400px;
+            height: 700px;
+        }
+    </style>
+
+  
+ </head>
+
+
+
+ <body onload="draw();">
+
+   <canvas id="canvas">
+     
+       This is supposed to be an interactive Canvas. Please use a newer browser!
+
+   </canvas>
+
+ </body>
+
+
+
+<script type="application/javascript">
+    function draw() {
+      var canvas = document.getElementById('canvas');
+      if (canvas.getContext) {
+        var ctx = canvas.getContext('2d');
+
+        ctx.moveTo(0,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+
+        ctx.moveTo(50,0);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+
+        ctx.moveTo(0,50);
+        ctx.lineTo(200,100);
+        ctx.stroke();
+
+        ctx.font = "30px Arial";
+        ctx.fillText("Hello World", 10, 50);
+
+
+
+        ctx.fillStyle = 'rgb(200, 0, 0)';
+        ctx.fillRect(10, 10, 30, 30);
+
+        ctx.fillStyle = 'rgba(0, 0, 200, 0.5)';
+        ctx.fillRect(30, 30, 30, 30);
+
+        ctx.fillStyle = 'rgba(0,255,0,0.3)';
+        ctx.fillRect(50, 50, 30, 30);
+
+        ctx.fillStyle = 'rgba(255,255,0,0.3)';
+        ctx.fillRect(70, 70, 30, 30);
+
+
+
+      }
+
+    }
+  </script>
+
+
+</html>
