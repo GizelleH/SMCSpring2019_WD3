@@ -1,6 +1,7 @@
 var canvas = document.getElementById("Game");
 var context = canvas.getContext("2d");
 
+
 var ballX = canvas.width/2;
 var ballY = canvas.height/2;
 var ballColor = 'rgb(0, 155, 155)';
@@ -11,6 +12,14 @@ var speedX = 5;
 var speedY = 3;
 var moveRight = true;
 var moveDown = true;
+
+var clickCount = 0;
+
+
+
+
+
+
 
 function animate(){
     context.fillStyle = 'rgba(255, 255, 255, 0.6)';
@@ -45,7 +54,17 @@ function animate(){
     }
 
     window.requestAnimationFrame(animate);
+
 }
+
+    var movePlayer = function () {
+      clickCount += 1;
+      player.isMoving = true;
+      document.getElementById('clickCount').innerHTML = clickCount;
+    }
+
+
+
 
 animate();
 
@@ -57,7 +76,12 @@ canvas.addEventListener('click', function(event){
 
     if( distX < ballRadius && distY < ballRadius){
         console.log('CLICK!!!!!');
-        ballColor = 'orange';
-        ballRadius = 1200;
+        ballColor = 'pink';
+        ballRadius = 48;
     }
 })
+
+
+
+
+
