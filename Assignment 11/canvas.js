@@ -33,6 +33,11 @@ function animate(){
     context.fill();
     context.stroke();
 
+    context.font = '30px Arial';
+    context.fillStyle = 'black';
+    
+
+
     if(ballX + ballRadius >= canvas.width || (ballX - ballRadius <= 0) ){
         moveRight = !moveRight;
     }
