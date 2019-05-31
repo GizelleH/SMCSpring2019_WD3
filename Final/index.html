@@ -56,7 +56,14 @@
       </div>
     </nav>
 
-    <div id="intro" class="view">
+  
+
+
+    <main>
+
+
+
+      <div id="intro" class="view">
 
 
       <div class="full-bg-img">
@@ -67,7 +74,7 @@
 
            <div class="mask rgba-black-strong">
 
-                <div class="container-fluid d-flex align-items-center justify-content-center h-100">
+                <div class="container-fluid container-1 d-flex align-items-center justify-content-center h-100">
 
                     <div class="row d-flex justify-content-center text-center">
 
@@ -98,81 +105,168 @@
 
     </div>
 
-
-    <main>
-
-      <div class="container">
-
-         <div id="carousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-        <div class="item active" data-thumb="0">
-            <img src="http://placehold.it/1024x585/e8117f/fff&amp;text=Product+Main">
+    <div class="container text-center my-3">
+    <h3>Bootstrap 4 Multiple Item Carousel</h3>
+    <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+        <div class="carousel-inner w-100" role="listbox">
+            <div class="carousel-item row no-gutters active">
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/222/fff?text=1"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/444?text=2"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/888?text=3"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/111/fff?text=4"></div>
+            </div>
+            <div class="carousel-item row no-gutters">
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280?text=5"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/555?text=6"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/333/fff?text=7"></div>
+                <div class="col-3 float-left"><img class="img-fluid" src="http://placehold.it/350x280/bbb?text=8"></div>
+            </div>
         </div>
-        <div class="item" data-thumb="0">
-            <img src="http://placehold.it/1024x585/00ffff/000&amp;text=Product+Image+2">
-        </div>
-        <div class="item" data-thumb="0">
-            <img src="http://placehold.it/1024x585/ff00ff/fff&amp;text=Product+Image+3">
-        </div>
-        <div class="item" data-thumb="0">
-            <img src="http://placehold.it/1024x585/ffff00/000&amp;text=Product+Image+4">
-        </div>
-        <div class="item" data-thumb="1">
-            <img src="http://placehold.it/1024x585/7B1C8E/fff&amp;text=Product+Image+5">
-        </div>
-        <div class="item" data-thumb="1">
-            <img src="http://placehold.it/1024x585/9EF383/000&amp;text=Product+Image+6">
-        </div>
-        <div class="item" data-thumb="1">
-            <img src="http://placehold.it/1024x585/D64908/fff&amp;text=Product+Image+7">
-        </div>
-        <div class="item" data-thumb="1">
-            <img src="http://placehold.it/1024x585/E3A3A1/000&amp;text=Product+Image+8">
-        </div>
+        <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#recipeCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-</div> 
-<div class="clearfix">
-<div id="thumbcarousel" class="carousel slide" data-interval="false">
-    <div class="carousel-inner">
-        <div class="item active">
-            <div data-target="#carousel" data-slide-to="0" class="thumb"><img src="http://placehold.it/350x250/e8117f/fff&amp;text=Product+Main"></div>
-            <div data-target="#carousel" data-slide-to="1" class="thumb"><img src="http://placehold.it/350x250/00ffff/000&amp;text=Product+Image+2"></div>
-            <div data-target="#carousel" data-slide-to="2" class="thumb"><img src="http://placehold.it/350x250/ff00ff/fff&amp;text=Product+Image+3"></div>
-            <div data-target="#carousel" data-slide-to="3" class="thumb"><img src="http://placehold.it/350x250/ffff00/000&amp;text=Product+Image+4"></div>
-        </div><!-- /item -->
-        <div class="item">
-            <div data-target="#carousel" data-slide-to="4" class="thumb"><img src="http://placehold.it/350x250/7B1C8E/fff&amp;text=Product+Image+5"></div>
-            <div data-target="#carousel" data-slide-to="5" class="thumb"><img src="http://placehold.it/350x250/9EF383/000&amp;text=Product+Image+6"></div>
-            <div data-target="#carousel" data-slide-to="6" class="thumb"><img src="http://placehold.it/350x250/D64908/fff&amp;text=Product+Image+7"></div>
-            <div data-target="#carousel" data-slide-to="7" class="thumb"><img src="http://placehold.it/350x250/E3A3A1/000&amp;text=Product+Image+8"></div>
-        </div><!-- /item -->
-    </div><!-- /carousel-inner -->
-    <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left"></span>
-    </a>
-    <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right"></span>
-    </a>
-</div> <!-- /thumbcarousel -->
-</div><!-- /clearfix -->
-            
-                   
-                
 
-      
+    <h4>Advances all 4 slides each time</h4>
+    <a href="https://www.codeply.com/go/HDu8lT7NxJ">also see</a>
+</div>
 
+
+     
 
 
     </main>
 
 
-    <footer>
-      
+ <!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Footer Content</h5>
+        <p>Here you can use rows and columns to organize your footer content.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit amet numquam iure provident voluptate
+          esse
+          quasi, veritatis totam voluptas nostrum.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">PROJECTS</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">ABOUT US</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">BLOG</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">AWARDS</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> New York, NY 10012, US</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@example.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
 
 
 
-
-    </footer>
+</footer>
+<!-- Footer -->
 
 
    

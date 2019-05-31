@@ -2,7 +2,7 @@
 body {
 
   font-family: 'Dosis', sans-serif;
-  background-color: #f1b0ae;
+  
 }
 
 html,
@@ -21,6 +21,25 @@ header,
 
 }
 
+
+
+.page-footer {
+
+  background-color: #f1b0ae;
+ 
+}
+
+
+
+.col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 12%;
+}
+
+
+
 .jumbotron {
     padding: 8rem 1rem;
     margin-top: 4rem;
@@ -32,18 +51,7 @@ header,
 
 }
 
-/* CSS used here will be applied after bootstrap.css */
-#carousel {
-    margin-top: 0px;
-}
-.item .thumb {
-  width: 25%;
-  cursor: pointer;
-  float: left;
-}
-.item .thumb img, .item img {
-  width: 100%;  
-}
+
 
 .bg-dark {
     background-color: #f1b0ae91!important;
@@ -80,7 +88,3 @@ header,
 
 }
 
-.row-1 {
-
-  margin-top: 20%;
-}
