@@ -38,19 +38,19 @@
             <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="contact.html">Contact<span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Shop</a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="face.html">Face</a>
-              <a class="dropdown-item" href="tools.html">Tools</a>
-            
-            </div>
+         <li class="nav-item">
+            <a class="nav-link" href="shop.html">Shop</a>
           </li>
         </ul>
 
-       
+         <a href="checkout.html" class="cart-icon">
+                <img class="fa fa-shopping-cart" src="img/cart-icon.png"> 
+                <span class="cart-count"></span>
+                 </a>
+
+        
         
       </div>
 
@@ -61,7 +61,7 @@
     <div class="container">
 
 
-      <h1 class="display-3 center">Contact/FAQ</h1>
+      <h1 class="display-3 center">Contact Us</h1>
       <hr class="hr-light">
 
     </div>
@@ -69,6 +69,44 @@
 
 
     <main>
+
+
+      <div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-6">
+        <figure class="figure">
+            <img src="img/contact_img.jpg" class="figure-img img-fluid rounded" alt="plants">
+            <figcaption class="figure-caption"><h2>Contact Info</h2><p>Santa Monica, CA 10012, US<br>01 234 567 88<br>info@rouge.com</p></figcaption>
+        </figure>
+    </div><!--col-->
+
+    <div class="col-12 col-md-6">
+                <div class="contact-form">
+                    <h2 id="questionForm">Send us a message!</h2>
+                    <form id="helpForm">
+                        <div class="form-group">
+                            <label for="inputName" class="form-font">Name</label>
+                            <input type="name" class="form-control" id="name" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail" class="form-font">Email Address</label>
+                            <input class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="textArea" class="form-font">Message</label>
+                            <textarea class="form-control" id="message" rows="3" placeholder="Message"></textarea>
+                            <p id="returnMessage"></p>
+                        </div>
+                        <input id="submitBtn" type="submit" class="btn btn-primary" value="Send" disabled="disabled">
+                    </form>
+    
+
+    </div>
+    
+
+    </div><!--col-->
+  </div> <!--row-->
+</div>
 
       
 
@@ -83,13 +121,125 @@
     </main>
 
 
-    <footer>
-      
+    <!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mb-4"></h5>
+        
+        
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mb-4">About</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <a href="#!">HOME</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">BLOG</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">CONTACT</a>
+            </p>
+          </li>
+          <li>
+            <p>
+              <a href="#!">SHOP</a>
+            </p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+
+        <!-- Contact details -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <p>
+              <i class="fas fa-home mr-3"></i> Santa Monica, CA 10012, US</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-envelope mr-3"></i> info@rouge.com</p>
+          </li>
+          <li>
+            <p>
+              <i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+          </li>
+          
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+
+        <!-- Social buttons -->
+        <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+        <!-- Facebook -->
+        <a type="button" class="btn-floating btn-fb">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <!-- Twitter -->
+        <a type="button" class="btn-floating btn-tw">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <!-- Google +-->
+        <a type="button" class="btn-floating btn-gplus">
+          <i class="fab fa-google-plus-g"></i>
+        </a>
+        <!-- Dribbble -->
+        <a type="button" class="btn-floating btn-dribbble">
+          <i class="fab fa-dribbble"></i>
+        </a>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
 
 
 
-
-    </footer>
+</footer>
+<!-- Footer -->
 
 
    
