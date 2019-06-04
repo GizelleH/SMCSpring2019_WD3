@@ -23,6 +23,11 @@ body {
 
 }
 
+.col-12 {
+    
+    margin-bottom: 5%;
+}
+
 
 .list-group {
     display: -ms-flexbox;
@@ -165,7 +170,7 @@ a:hover {
 .figure-caption {
 
 
-    background-color:#f1b0ae;
+    background-color:#ff79a2a3;
     padding:3%;
 }
 

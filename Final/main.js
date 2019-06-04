@@ -5,30 +5,22 @@
 
 
 
-    
-      
+        $(document).ready(function(){
+            $('#exampleModal').modal({
+                show:false,
+                backdrop:false
+            });
+            console.log($('Document is now ready.'));
+        });
 
-       
 
 
-
-
-
-
-$(document).ready(function() {
-
- 
-  // If Mobile, add background color when toggler is clicked
-  $(".navbar-toggler").click(function() {
-    if (!$(".navbar-collapse").hasClass("show")) {
-      $(".navbar").addClass("bg-dark");
-    } else {
-      if ($(window).scrollTop() < 56) {
-        $(".navbar").removeClass("bg-dark");
-      } else {
-      }
-    }
-  });
+$('#playButton').click(function () {
+    $('#turrellcarousel').carousel('cycle');
+});
+$('#pauseButton').click(function () {
+    $('#turrellcarousel').carousel('pause');
+});
 
   $('#addCart').click(function(e){
                 e.preventDefault();
@@ -48,7 +40,31 @@ $(document).ready(function() {
                 }
             })
 
-});
+
+    
+
+  $(document).ready(function(){
+
+          $("input[type=submit]").attr("disabled", "disabled");
+            $('.form-control').blur(function(){
+                    var alertMessage = '<p>Please fill out field.</p>';
+                    if( $(this).val().length === 0 ) {
+                        $(this).parent().append(alertMessage);
+                    }
+                    if( $('#name' && '#email' && '#message').val().length > 0){
+                        $('#submitBtn').removeAttr('disabled');
+                    };
+            });
+    })
+    
+
+
+
+
+
+
+
+
 
 
 
